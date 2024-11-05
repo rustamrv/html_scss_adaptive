@@ -1,0 +1,449 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+header {
+  margin: 121px 135px 0;
+  text-align: center;
+}
+header small {
+  color: var(--sub-text, #898f8f);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+header h1 {
+  color: var(--gold, #fc0);
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 66px;
+  text-transform: uppercase;
+}
+header .img-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  text-align: center;
+}
+header .img-container:before, header .img-container:after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #ffcc00;
+}
+
+main {
+  margin: 0 185px;
+}
+main .flex-container {
+  display: flex;
+  margin-top: 40px;
+}
+main .flex-container .line {
+  margin: 0 85px;
+  width: 1px;
+  height: 560px;
+  background-color: #ffcc00;
+}
+main .flex-container .image:before, main .flex-container .image:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: #ffcc00;
+}
+main .flex-container .image:before {
+  top: -16px;
+  left: -16px;
+}
+main .flex-container .image:after {
+  top: -16px;
+  right: -16px;
+}
+main .flex-container .image .line {
+  position: absolute;
+  background-color: #ffcc00;
+  height: 1px;
+  width: 100px;
+}
+main .flex-container .image .line.bottom-left {
+  bottom: -16px;
+  left: -101px;
+}
+main .flex-container .image .line.top-left-side {
+  width: 1px;
+  height: 100px;
+  left: -101px;
+  top: -16px;
+}
+main .flex-container .image .line.bottom-left-side {
+  width: 1px;
+  height: 100px;
+  left: -101px;
+  bottom: -16px;
+}
+main .flex-container .image .line.bottom-right-side {
+  width: 1px;
+  height: 100px;
+  right: -101px;
+  bottom: -16px;
+}
+main .flex-container .image .line.bottom-right {
+  bottom: -16px;
+  right: -100px;
+}
+main .flex-container .image .line.top-right-side {
+  width: 1px;
+  height: 100px;
+  right: -101px;
+  top: -16px;
+}
+main .flex-container .item {
+  text-align: center;
+  margin-left: 85px;
+  margin-top: 64px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+main .flex-container .item ul {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
+}
+main .flex-container .item ul li {
+  list-style: none;
+  transition: transform 0.3s;
+}
+main .flex-container .item ul li:hover {
+  transform: scale(1.1);
+}
+main .flex-container .item ul li:hover img {
+  filter: brightness(0) saturate(100%) invert(76%) sepia(70%) saturate(300%) hue-rotate(-10deg) brightness(102%) contrast(101%);
+}
+main .flex-container .item ul li img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s;
+}
+main .flex-container .item p {
+  color: #333;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 49px;
+}
+main .flex-container .item h2,
+main .flex-container .item h4 {
+  color: var(--gray-dark, #666);
+  text-align: center;
+}
+main .flex-container .item h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+main .flex-container .item h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: capitalize;
+}
+main .flex-container .item .linear-full {
+  height: 1px;
+  width: 100px;
+  background-color: #fc0;
+  margin: 20px auto;
+}
+main .flex-container .item .linear {
+  height: 4px;
+  width: 100px;
+  background: linear-gradient(to right, #fc0 0%, #fc0 20%, white 20%, white 30%, #fc0 30%, #fc0 70%, white 70%, white 80%, #fc0 80%, #fc0 100%);
+  margin: 20px auto;
+}
+main .flex-container .item .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border: 1px solid #ffcc00;
+  background-color: white;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: min(95%, 960px);
+  }
+
+  main {
+    margin: 0 185px;
+  }
+  main .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  main .flex-container .line {
+    width: 724px;
+    height: 1px;
+    margin: 85px 0;
+  }
+  main .flex-container .item {
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  main .flex-container .image {
+    margin-left: 0;
+    margin-top: 20px;
+    display: block;
+  }
+  main .flex-container .image:before {
+    top: -16px;
+    left: 95px;
+  }
+  main .flex-container .image:after {
+    top: -16px;
+    right: 95px;
+  }
+  main .flex-container .image .line {
+    position: absolute;
+    background-color: #ffcc00;
+    height: 1px;
+    width: 100px;
+  }
+  main .flex-container .image .line.bottom-left {
+    bottom: -97px;
+    left: 95px;
+  }
+  main .flex-container .image .line.top-left-side {
+    width: 1px;
+    height: 100px;
+    left: 95px;
+    top: -101px;
+  }
+  main .flex-container .image .line.bottom-left-side {
+    width: 1px;
+    height: 100px;
+    left: 95px;
+    bottom: -97px;
+  }
+  main .flex-container .image .line.bottom-right-side {
+    width: 1px;
+    height: 100px;
+    right: 95px;
+    bottom: -97px;
+  }
+  main .flex-container .image .line.bottom-right {
+    bottom: -97px;
+    right: 95px;
+  }
+  main .flex-container .image .line.top-right-side {
+    width: 1px;
+    height: 100px;
+    right: 95px;
+    top: -101px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: min(95%, 540px);
+  }
+
+  main .flex-container .image:before {
+    top: -16px;
+    left: -16px;
+  }
+  main .flex-container .image:after {
+    top: -16px;
+    right: -37px;
+  }
+  main .flex-container .image .line {
+    position: absolute;
+    background-color: #ffcc00;
+    height: 1px;
+    width: 100px;
+  }
+  main .flex-container .image .line.bottom-left {
+    bottom: -97px;
+    left: -16px;
+  }
+  main .flex-container .image .line.bottom-right {
+    bottom: -97px;
+    right: -37px;
+  }
+  main .flex-container .image .line.top-left-side {
+    width: 1px;
+    height: 100px;
+    left: -16px;
+    top: -101px;
+  }
+  main .flex-container .image .line.bottom-left-side {
+    width: 1px;
+    height: 100px;
+    left: -16px;
+    bottom: -97px;
+  }
+  main .flex-container .image .line.bottom-right-side {
+    width: 1px;
+    height: 100px;
+    right: -38px;
+    bottom: -97px;
+  }
+  main .flex-container .image .line.top-right-side {
+    right: -37px;
+    top: -101px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: min(95%, 100%);
+    padding: 0 10px;
+  }
+
+  header {
+    margin: 40px 0 0;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  main {
+    margin: 40px 0 0;
+    padding: 20px 10px;
+  }
+  main .flex-container .image img {
+    max-width: 360px;
+  }
+  main .flex-container .image:before, main .flex-container .image:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #ffcc00;
+  }
+  main .flex-container .image:before {
+    top: -16px;
+    left: -16px;
+  }
+  main .flex-container .image:after {
+    top: -16px;
+    right: -16px;
+  }
+  main .flex-container .image .line {
+    position: absolute;
+    background-color: #ffcc00;
+    height: 1px;
+    width: 100px;
+  }
+  main .flex-container .image .line.bottom-left {
+    bottom: -97px;
+    left: -16px;
+  }
+  main .flex-container .image .line.bottom-right {
+    bottom: -97px;
+    right: -14px;
+  }
+  main .flex-container .image .line.top-left-side {
+    width: 1px;
+    height: 100px;
+    left: -16px;
+    top: -100px;
+  }
+  main .flex-container .image .line.top-right-side {
+    width: 1px;
+    height: 100px;
+    right: -16px;
+    top: -100px;
+  }
+  main .flex-container .image .line.bottom-left-side {
+    width: 1px;
+    height: 100px;
+    left: -16px;
+    bottom: -96px;
+  }
+  main .flex-container .image .line.bottom-right-side {
+    width: 1px;
+    height: 100px;
+    right: -14px;
+    bottom: -96px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main {
+    margin: 40px 0 0;
+    padding: 20px 10px;
+  }
+  main .flex-container .image img {
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .flex-container .image img {
+    max-width: 265px;
+  }
+}
