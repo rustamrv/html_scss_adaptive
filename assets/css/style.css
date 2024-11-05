@@ -249,7 +249,7 @@ main .flex-container .item .btn {
     margin-top: 40px;
   }
   main .flex-container .line {
-    width: 724px;
+    max-width: calc(100% - 32px);
     height: 1px;
     margin: 85px 0;
   }
@@ -275,7 +275,7 @@ main .flex-container .item .btn {
     position: absolute;
     background-color: #ffcc00;
     height: 1px;
-    width: 100px;
+    max-width: calc(100% - 32px);
   }
   main .flex-container .image .line.bottom-left {
     bottom: -97px;
@@ -327,7 +327,7 @@ main .flex-container .item .btn {
     position: absolute;
     background-color: #ffcc00;
     height: 1px;
-    width: 100px;
+    max-width: calc(100% - 32px);
   }
   main .flex-container .image .line.bottom-left {
     bottom: -97px;
@@ -398,7 +398,7 @@ main .flex-container .item .btn {
     position: absolute;
     background-color: #ffcc00;
     height: 1px;
-    width: 100px;
+    max-width: calc(100% - 32px);
   }
   main .flex-container .image .line.bottom-left {
     bottom: -97px;

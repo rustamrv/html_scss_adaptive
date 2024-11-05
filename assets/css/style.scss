@@ -217,7 +217,6 @@ main {
               filter: brightness(0) saturate(100%) invert(76%) sepia(70%)
                 saturate(300%) hue-rotate(-10deg) brightness(102%)
                 contrast(101%);
- 
             }
           }
 
@@ -315,7 +314,7 @@ main {
       margin-top: 40px;
 
       .line {
-        width: 724px;
+        max-width: calc(100% - 32px);
         height: 1px;
         margin: 85px 0;
       }
@@ -345,7 +344,7 @@ main {
           position: absolute;
           background-color: #ffcc00;
           height: 1px;
-          width: 100px;
+          max-width: calc(100% - 32px);
 
           &.bottom-left {
             bottom: -97px;
@@ -410,7 +409,7 @@ main {
       position: absolute;
       background-color: #ffcc00;
       height: 1px;
-      width: 100px;
+      max-width: calc(100% - 32px);
 
       &.bottom-left {
         bottom: -97px;
@@ -496,7 +495,7 @@ main {
         position: absolute;
         background-color: #ffcc00;
         height: 1px;
-        width: 100px;
+        max-width: calc(100% - 32px);
 
         &.bottom-left {
           bottom: -97px;
